@@ -144,24 +144,6 @@ npm start
 
 ---
 
-## 🎥 Vídeos Incluídos
-
-1. **Demonstração do Projeto**
-   - Vídeo demonstrativo das funcionalidades
-
-2. **Tutorial de Uso**
-   - Como utilizar todas as funcionalidades
-
-3. **Apresentação Final**
-   - Apresentação completa do sistema
-
-> 💡 **Como adicionar seus vídeos:**
-> 1. Coloque arquivos `.mp4` na pasta `public/`
-> 2. Edite o array `videos` em `page.tsx`
-> 3. Adicione thumbnails (opcional)
-
----
-
 ## 🎮 Como Usar
 
 ### Controles Básicos
@@ -251,20 +233,6 @@ className="bg-red-600" → className="bg-blue-600"
 | **Auto-hide** | ❌ | ✅ |
 
 ---
-
-## 🎥 Demonstração em Vídeo
-
-### Vídeo no YouTube
-📹 **[Clique para assistir](https://youtube.com/xxxxx)**
-
-**Conteúdo do vídeo (3 minutos):**
-- Apresentação do projeto
-- Demonstração de play/pause
-- Controle de volume
-- Navegação entre vídeos
-- Recursos extras
-
-### Como Gravar o Vídeo
 
 ```bash
 # Usando SimpleScreenRecorder
