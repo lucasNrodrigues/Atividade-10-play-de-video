@@ -300,8 +300,3 @@ Projeto desenvolvido para fins educacionais.
 ✨ Fullscreen  
 ✨ Design moderno   
 
----
-
-**⭐ Player de Vídeo - Atividade 10 Completa!**
-
-_Última atualização: Outubro 2024_
