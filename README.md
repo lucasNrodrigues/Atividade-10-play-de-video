@@ -234,16 +234,6 @@ className="bg-red-600" → className="bg-blue-600"
 
 ---
 
-```bash
-# Usando SimpleScreenRecorder
-simplescreenrecorder
-
-# Configurar:
-- Área: Janela do navegador
-- Áudio: Microfone
-- Duração: Máximo 3 minutos
-```
-
 ## 🆘 Solução de Problemas
 
 ### Vídeo não carrega
