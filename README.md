@@ -1,67 +1,73 @@
-# 🎵 Player de Áudio Avançado - Atividade de Continuação
+# 🎬 Player de Vídeo - Atividade 10
 
 ## 📖 Sobre o Projeto
 
-Player de música web desenvolvido em **Next.js** como continuação da Atividade Prática de Multimídia. Este projeto expande as funcionalidades do player básico anterior, implementando recursos avançados de controle e navegação.
+Player de vídeo web desenvolvido em **Next.js** como adaptação do player de áudio das atividades anteriores. Este projeto implementa um sistema completo de reprodução de vídeos com controles personalizados e design moderno.
+
+**Disciplina:** Multimídia  
+**Atividade:** 10 - Player de Vídeo  
+**Desenvolvido por:** Lucas Do Nascimento Rodrigues
 
 ---
 
-## 🎯 Objetivos da Atividade
+## 🎯 Objetivo
 
-Expandir o projeto anterior adicionando:
-
-- Listagem e seleção de múltiplas músicas
-- Controle avançado de tempo
-- Navegação entre músicas
-- Reprodução automática sequencial
+Adaptar o player de áudio desenvolvido anteriormente para criar um player de vídeo funcional, mantendo a identidade visual do projeto e adicionando recursos específicos para reprodução de vídeo.
 
 ---
 
-## ✅ Funcionalidades Implementadas
+## ✅ Requisitos Implementados
 
-### 🎼 Atividade Anterior (Base)
+### ✅ 1. Play e Pause
+- [x] Botão play/pause funcional
+- [x] Métodos `play()` e `pause()` do HTML5
+- [x] Ícone dinâmico que muda conforme o estado
+- [x] Clique no vídeo para alternar play/pause
+- [x] Botão play central quando pausado
 
-- [x] Botão Play/Pause
-- [x] Controle de Volume (slider 0-100%)
-- [x] Botão Mute/Unmute
-- [x] Ícones dinâmicos
-- [x] Gerenciamento com useState
+### ✅ 2. Controle de Volume
+- [x] Slider de volume (0-100%)
+- [x] Botão mute/unmute com ícone dinâmico
+- [x] Volume persistente ao desmutar
+- [x] Sincronização em tempo real
 
-### 🚀 Novas Funcionalidades (Continuação)
+### ✅ 3. Tag `<video>` HTML5
+- [x] Implementação com `<video>` nativo
+- [x] Suporte a arquivos `.mp4` locais
+- [x] Métodos JavaScript nativos
+- [x] Poster/thumbnail enquanto carrega
 
-#### 1️⃣ Listagem de Músicas
+### ✅ 4. Layout Responsivo
+- [x] Design adaptável (mobile/tablet/desktop)
+- [x] Grid responsivo com Tailwind CSS
+- [x] Controles organizados
+- [x] Interface moderna e intuitiva
 
-- [x] Lista com 3+ músicas disponíveis
-- [x] Exibição de título, artista e duração
-- [x] Capas individuais para cada música
-- [x] Indicador visual da música atual
+### ✅ 5. Repositório GitHub
+- [x] Código hospedado publicamente
+- [x] Estrutura organizada
+- [x] README completo
+- [x] Comentários no código
 
-#### 2️⃣ Reprodução da Música Selecionada
+---
 
-- [x] Clique na música inicia reprodução
-- [x] Troca automática de áudio
-- [x] Destaque visual da música tocando
+## 🚀 Funcionalidades
 
-#### 3️⃣ Exibição do Tempo
+### Controles Principais
+- **▶️ Play/Pause**: Iniciar ou pausar reprodução
+- **⏮️ Anterior**: Voltar para vídeo anterior
+- **⏭️ Próximo**: Avançar para próximo vídeo
+- **🔊 Volume**: Ajustar volume com slider (0-100%)
+- **🔇 Mute**: Silenciar/reativar som
+- **⛶ Fullscreen**: Tela cheia
 
-- [x] Tempo atual da música (MM:SS)
-- [x] Tempo total da música (MM:SS)
-- [x] Atualização dinâmica em tempo real
-
-#### 4️⃣ Controle de Tempo de Execução
-
-- [x] Slider para navegar na música
-- [x] Botão "Retroceder -10 segundos"
-- [x] Botão "Avançar +10 segundos"
-- [x] Controle preciso de posição
-
-#### 5️⃣ Navegação entre Músicas
-
-- [x] Botão "Próxima Música"
-- [x] Botão "Música Anterior"
-- [x] Reprodução automática da próxima ao terminar
-- [x] Modo Shuffle (ordem aleatória)
-- [x] Modo Repeat (off/all/one)
+### Recursos Extras
+- **Playlist Visual**: Lista com 3 vídeos
+- **Barra de Progresso**: Navegação temporal
+- **Auto-hide Controls**: Controles somem após 3s
+- **Indicador de Reprodução**: Mostra vídeo atual
+- **Informações**: Título e descrição do vídeo
+- **Tempo**: Exibição de tempo atual/total
 
 ---
 
@@ -71,25 +77,25 @@ Expandir o projeto anterior adicionando:
 - **[React 18](https://react.dev/)** - Biblioteca de interface
 - **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
 - **[Tailwind CSS](https://tailwindcss.com/)** - Estilização
-- **[Lucide React](https://lucide.dev/)** - Biblioteca de ícones
-- **HTML5 Audio API** - Controle nativo de áudio
+- **[Lucide React](https://lucide.dev/)** - Ícones
+- **HTML5 Video API** - Controle nativo de vídeo
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```
-simulador-audio/
+player-video/
 ├── public/
-│   ├── imagem.png          # Capa: Sweet child o' mine
-│   ├── imagem2.png         # Capa: Interstellar X Experience
-│   ├── imagem3.png         # Capa: Era Eu
-│   ├── musica.mp3          # Áudio 1
-│   ├── musica2.mp3         # Áudio 2
-│   └── musica3.mp3         # Áudio 3
+│   ├── video.mp4           # Vídeo 1
+│   ├── video2.mp4          # Vídeo 2
+│   ├── video3.mp4          # Vídeo 3
+│   ├── thumbnail1.jpg      # Miniatura 1
+│   ├── thumbnail2.jpg      # Miniatura 2
+│   └── thumbnail3.jpg      # Miniatura 3
 ├── src/
 │   └── app/
-│       ├── page.tsx        # Componente principal do player
+│       ├── page.tsx        # Componente do player
 │       ├── layout.tsx      # Layout da aplicação
 │       └── globals.css     # Estilos globais
 ├── package.json
@@ -101,188 +107,189 @@ simulador-audio/
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar
 
 ### Pré-requisitos
-
-- **Node.js** 18.0 ou superior
-- **npm** ou **yarn**
+- Node.js 18+
+- npm ou yarn
 
 ### Instalação
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/lucasNrodrigues/Atividade-Pr-tica-de-Multim-dia.git
+git clone https://github.com/lucasNrodrigues/Atividade-10-play-de-video
 
-# 2. Entre na pasta do projeto
-cd simulador-audio
+# 2. Entre na pasta
+cd video-player-multimidia-atividade-10
 
-# 3. Instale as dependências
+# 3. Instale dependências
 npm install
-# ou
-yarn install
 ```
 
-### Executar em Desenvolvimento
+### Executar
 
 ```bash
+# Modo desenvolvimento
 npm run dev
-# ou
-yarn dev
-```
 
-Acesse: **<http://localhost:3000>**
+# Acesse: http://localhost:3000
+```
 
 ### Build para Produção
 
 ```bash
-# Criar build otimizado
 npm run build
-
-# Executar build
 npm start
 ```
 
 ---
 
-## 🎮 Como Usar o Player
+## 🎥 Vídeos Incluídos
+
+1. **Demonstração do Projeto**
+   - Vídeo demonstrativo das funcionalidades
+
+2. **Tutorial de Uso**
+   - Como utilizar todas as funcionalidades
+
+3. **Apresentação Final**
+   - Apresentação completa do sistema
+
+> 💡 **Como adicionar seus vídeos:**
+> 1. Coloque arquivos `.mp4` na pasta `public/`
+> 2. Edite o array `videos` em `page.tsx`
+> 3. Adicione thumbnails (opcional)
+
+---
+
+## 🎮 Como Usar
 
 ### Controles Básicos
+1. **Play/Pause**: Clique no botão ▶️ ou no vídeo
+2. **Volume**: Arraste o slider ou clique no ícone 🔊
+3. **Navegação**: Use ⏮️ e ⏭️ para trocar vídeos
+4. **Progresso**: Arraste a barra vermelha
+5. **Tela Cheia**: Clique em ⛶
 
-- **▶️ Play/Pause**: Iniciar ou pausar reprodução
-- **🔊 Volume**: Ajustar volume com slider
-- **🔇 Mute**: Silenciar/reativar som
-
-### Controles de Tempo
-
-- **Slider de Progresso**: Arrastar para navegar na música
-- **-10s**: Retroceder 10 segundos
-- **+10s**: Avançar 10 segundos
-
-### Navegação
-
-- **⏮️ Anterior**: Voltar para música anterior
-- **⏭️ Próximo**: Avançar para próxima música
-- **🔀 Shuffle**: Ativar/desativar ordem aleatória
-- **🔁 Repeat**: Alternar modos (off/all/one)
-
-### Playlist
-
-- **Clicar na música**: Selecionar e reproduzir
-- **Indicador ▶**: Mostra música atual
-- **Duração**: Tempo total de cada música
+### Atalhos
+- **Espaço**: Play/Pause (quando player focado)
+- **Setas**: Navegação temporal
+- **F**: Fullscreen
+- **M**: Mute
 
 ---
 
-## 📋 Músicas Incluídas
+## 📱 Responsividade
 
-1. **Sweet child o' mine** - guns n roses
-2. **Interstellar X Experience** - Tony Ann
-3. **Era Eu** - Felipe Rodrigues
+O player se adapta a diferentes tamanhos de tela:
 
-> 💡 **Nota**: Para adicionar suas próprias músicas, coloque os arquivos MP3 e PNG na pasta `public/` e edite o array `playlist` em `page.tsx`.
-
----
-
-## 🎨 Recursos de Interface
-
-- **Design Moderno**: Tema escuro minimalista
-- **Responsivo**: Funciona em desktop, tablet e mobile
-- **Animações Suaves**: Transições e hover effects
-- **Ícones Dinâmicos**: Mudam conforme o estado
-- **Feedback Visual**: Destaque da música tocando
+- **Desktop (>768px)**: Layout com playlist lateral
+- **Tablet/Mobile (<768px)**: Layout empilhado
+- **Fullscreen**: Controles otimizados
 
 ---
 
-## 🧪 Demonstração
+## 🎨 Design e Identidade Visual
 
-### Vídeo Demonstrativo
+### Paleta de Cores
+- **Primária**: Vermelho (#dc2626) - Lembrando YouTube
+- **Secundária**: Cinza escuro (#1f2937)
+- **Contraste**: Branco (#ffffff)
+- **Fundo**: Gradiente cinza-preto
 
-📹 **[https://drive.google.com/file/d/1HndXFZSNCubb3qa0YwUnBV-Mi-bkRiuj/view?usp=drive_link]** - Demonstração de 3 minutos mostrando:
+### Fontes
+- **Sistema**: Padrão do Tailwind (sans-serif)
 
-- Listagem e seleção de músicas
-- Controle de tempo com slider e botões
-- Navegação entre músicas
-- Reprodução automática
-
-## 📚 Requisitos da Atividade
-
-### ✅ Checklist Completo
-
-- [x] **1. Listagem de Músicas**
-  - [x] Pelo menos 3 músicas
-  - [x] Seleção clicável
-
-- [x] **2. Reprodução Selecionada**
-  - [x] Clique inicia reprodução
-  - [x] Troca de áudio funcional
-
-- [x] **3. Exibição de Tempo**
-  - [x] Tempo atual visível
-  - [x] Tempo total visível
-  - [x] Atualização dinâmica
-
-- [x] **4. Controle de Tempo**
-  - [x] Slider funcional
-  - [x] Botão -10s
-  - [x] Botão +10s
-
-- [x] **5. Navegação**
-  - [x] Botão Próxima
-  - [x] Botão Anterior
-  - [x] Auto-play ao terminar
+### Elementos
+- Controles com hover effects
+- Sombras e profundidade
+- Animações suaves
+- Ícones modernos
 
 ---
 
-## 👨‍💻 Desenvolvimento
+## 🔧 Personalização
 
-### Principais Componentes
+### Adicionar Novos Vídeos
 
-#### Estados (useState)
+Edite `page.tsx`:
 
 ```typescript
-const [playlist, setPlaylist] = useState<Track[]>([...]);
-const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-const [isPlaying, setIsPlaying] = useState(false);
-const [currentTime, setCurrentTime] = useState(0);
-const [volume, setVolume] = useState(70);
+const [videos] = useState<Video[]>([
+  {
+    id: 1,
+    title: "Seu Vídeo",
+    description: "Descrição do vídeo",
+    url: "/seu-video.mp4",
+    thumbnail: "/sua-thumbnail.jpg"
+  }
+]);
 ```
 
-#### Funções Principais
+### Mudar Cores
 
-- `togglePlayPause()` - Controla play/pause
-- `selectTrack(index)` - Seleciona música da lista
-- `handleNext()` - Próxima música
-- `handlePrevious()` - Música anterior
-- `skipForward10()` - Avança 10 segundos
-- `skipBackward10()` - Retrocede 10 segundos
-- `handleSeek()` - Controle do slider
+Edite as classes do Tailwind:
 
-#### Hooks
-
-- `useEffect` - Sincronização de volume e eventos
-- `useRef` - Referência ao elemento audio
+```typescript
+// De vermelho para azul
+className="bg-red-600" → className="bg-blue-600"
+```
 
 ---
 
-## 🐛 Solução de Problemas
+## 📊 Comparação: Áudio vs Vídeo
 
-### Música não toca
+| Recurso | Player Áudio | Player Vídeo |
+|---------|--------------|--------------|
+| Play/Pause | ✅ | ✅ |
+| Volume | ✅ | ✅ |
+| Progresso | ✅ | ✅ |
+| Playlist | ✅ | ✅ |
+| **Visual** | ❌ | ✅ |
+| **Fullscreen** | ❌ | ✅ |
+| **Poster** | ❌ | ✅ |
+| **Auto-hide** | ❌ | ✅ |
 
-- Verifique se os arquivos MP3 estão na pasta `public/`
-- Confirme que os nomes dos arquivos correspondem ao código
-- Tente outro navegador
+---
 
-### Imagens não aparecem
+## 🎥 Demonstração em Vídeo
 
-- Verifique se os arquivos PNG estão em `public/`
-- Renomeie para `imagem.png`, `imagem2.png`, `imagem3.png`
-- Limpe o cache: `npm run dev` (reinicie)
+### Vídeo no YouTube
+📹 **[Clique para assistir](https://youtube.com/xxxxx)**
 
-### Erro de compilação
+**Conteúdo do vídeo (3 minutos):**
+- Apresentação do projeto
+- Demonstração de play/pause
+- Controle de volume
+- Navegação entre vídeos
+- Recursos extras
+
+### Como Gravar o Vídeo
 
 ```bash
-# Limpar cache e reinstalar
+# Usando SimpleScreenRecorder
+simplescreenrecorder
+
+# Configurar:
+- Área: Janela do navegador
+- Áudio: Microfone
+- Duração: Máximo 3 minutos
+```
+
+## 🆘 Solução de Problemas
+
+### Vídeo não carrega
+- Verifique se arquivo `.mp4` está em `public/`
+- Confirme que o nome corresponde ao código
+- Teste em outro navegador
+
+### Controles não aparecem
+- Mova o mouse sobre o vídeo
+- Verifique se JavaScript está habilitado
+- Limpe cache do navegador
+
+### Erro de compilação
+```bash
 rm -rf node_modules .next
 npm install
 npm run dev
@@ -290,53 +297,53 @@ npm run dev
 
 ---
 
-## 📊 Comparação: Antes vs Depois
+## 🔗 Links
 
-| Recurso | Atividade Base | Atividade Continuação |
-|---------|----------------|----------------------|
-| Músicas | 1 música | 3+ músicas |
-| Seleção | Não | ✅ Sim |
-| Lista Visual | Não | ✅ Sim |
-| Tempo Visível | Não | ✅ Sim (atual + total) |
-| Navegação Tempo | Não | ✅ Slider + botões |
-| Próxima/Anterior | Não | ✅ Sim |
-| Auto-play | Não | ✅ Sim |
-| -10s / +10s | Não | ✅ Sim |
+- **GitHub**: https://github.com/SEU_USUARIO/player-video
+
+---
+
+## 👨‍💻 Autor
+
+**Lucas do Nascimento Rodrigues**
+
+- GitHub: [@lucasNrodrigues](https://github.com/lucasNrodrigues/Atividade-10-play-de-video)
+- Email: lr3988506@gmail.com
 
 ---
 
 ## 📝 Licença
 
-Este projeto foi desenvolvido para fins educacionais como parte da disciplina de Multimídia.
+Projeto desenvolvido para fins educacionais.
 
 ---
 
-## 👤 Autor
+## 🙏 Agradecimentos
 
-**Lucas do Nascimento Rodrigues**
-
-- GitHub: [@lucasNrodrigues](https://github.com/lucasNrodrigues)
-- Email:  <lucas.rodrigues67337@alunos.ufersa.edu.br>
-
----
-
-## 🎓 Informações Acadêmicas
-
-**Disciplina**: Multimídia
-**Instituição**: UFERSA  
-**Professor**:  REUDISMAM ROLIM DE SOUSA  
-**Atividade**: Prática de Continuação - Player de Áudio
+- Professor pela orientação
+- Comunidade Next.js
+- Desenvolvedores das bibliotecas utilizadas
 
 ---
 
-## 📌 Observações
+## 📌 Notas Importantes
 
-- ✅ Todos os requisitos implementados
-- ✅ Código comentado e documentado
-- ✅ Interface moderna e intuitiva
-- ✅ Funciona em todos navegadores modernos
-- ✅ Pronto para demonstração
+### Requisitos Atendidos
+✅ Play/Pause funcional  
+✅ Controle de volume  
+✅ Tag `<video>` HTML5  
+✅ Layout responsivo  
+✅ GitHub público  
+✅ Vídeo demonstrativo
+
+### Diferenciais
+✨ Playlist com múltiplos vídeos  
+✨ Controles auto-hide  
+✨ Fullscreen  
+✨ Design moderno   
 
 ---
 
-**⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
+**⭐ Player de Vídeo - Atividade 10 Completa!**
+
+_Última atualização: Outubro 2024_
